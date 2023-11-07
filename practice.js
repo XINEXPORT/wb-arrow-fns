@@ -15,7 +15,8 @@ console.log(isGreaterThanTwenty(21));
 
 // Create a one line arrow function called seven that will return the number 7
 
-// REPLACE THIS WITH YOUR CODE
+const seven = () => 7 ;
+console.log(seven())
 
 /// /////// PROBLEM 3 //////////
 
@@ -24,23 +25,23 @@ console.log(isGreaterThanTwenty(21));
 //
 // All functions should also be contained within a single line
 
-// function addNums(num1, num2) {
-//   return num1 + num2;
-// }
+const addNums = (num1, num2) => num1+num2;
+console.log(addNums(1,1))
 
-// REPLACE THIS WITH YOUR CODE
 
 // function subtractNums(num1, num2) {
 //   return num1 - num2;
 // }
 
-// REPLACE THIS WITH YOUR CODE
+const subtractNums = (num1, num2) => num1-num2;
+console.log(subtractNums(2,1))
 
 // function double(num) {
 //   return num * 2;
 // }
 
-// REPLACE THIS WITH YOUR CODE
+const double = (num) => num*2;
+console.log(double(2));
 
 /// /////// PROBLEM 4 //////////
 
