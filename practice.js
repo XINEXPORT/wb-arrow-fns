@@ -53,7 +53,16 @@ console.log(double(2));
 // Your function should be an arrow function (not a function declaration) and it should
 // contain an explicit return statement.
 
-// REPLACE THIS WITH YOUR CODE
+const gemInfo = (gemType,gemSize,gemWeight) => {
+  const prop = {
+  gemType: gemType,
+  gemSize: gemSize,
+  gemWeight: gemWeight
+};
+  return prop;
+}
+const result =gemInfo('Diamond','Small',12);
+console.log(result);
 
 /// /////// PROBLEM 5 //////////
 
@@ -62,15 +71,18 @@ console.log(double(2));
 // To see it working, invoke outerFn at the bottom, passing in innerFn as the callback.
 // You should now see "The innerFn is a callback!" in the console.
 
-// Create function here
+function outerFn(item){
+  item();
+  return item();
+}
 
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
-function innerFn() {
+function innerFn() { 
   return 'The innerFn is a callback!';
 }
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Invoke function here
+outerFn(innerFn); 
 
 /// /////// PROBLEM 6 //////////
 
