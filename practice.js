@@ -8,7 +8,8 @@
 // Your function should be an arrow function (not a function declaration) and be contained
 // within a single line
 
-// REPLACE THIS WITH YOUR CODE
+const isGreaterThanTwenty = (item) => (item) > 20;
+console.log(isGreaterThanTwenty(21));
 
 /// /////// PROBLEM 2 //////////
 
