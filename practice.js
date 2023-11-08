@@ -148,7 +148,7 @@ const mixedNumbers = [6, 3, 1, 7, 5, 2, 6, 8, 9, 4, 2, 7, 9, 3, 1, 8, 4, 3];
 */
 
 //Code Here
-let evenNumbers; // = mixedNumbers.filter(/* Provide Your Callback Here */)
+const evenNumbers = mixedNumbers.filter((num) => num % 2===0); // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 ////////// PROBLEM 10 //////////
 
@@ -165,7 +165,7 @@ const prices = [15.0, 23.0, 78.0, 34.0, 12.0, 86.0, 12.0, 79.0, 32.0];
 */
 
 //Code Here
-let postTaxPrices; // = prices.map(/* Provide Your Callback Here );
+const postTaxPrices = prices.map((price) => price*1.07); 
 
 ////////// PROBLEM 11 //////////
 
