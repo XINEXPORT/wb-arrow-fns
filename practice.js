@@ -90,15 +90,14 @@ outerFn(innerFn);
 // The fullName function should return the callback, passing in firstName and lastName as parameters.
 // To test, invoke fullName with your first name, last name and the welcomeMessage function as arguments.
 
-// Create function fullName here
-
+const fullName = (firstName, lastName, welcomeMessage) => welcomeMessage(firstName, lastName);
 // ===== DO NOT TOUCH CODE BELOW THIS LINE ===== //
 function welcomeMessage(first, last) {
   return `Welcome to DevMountain, ${first} ${last}!`;
 }
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Invoke fullName below
+fullName('John', 'Smith', welcomeMessage);
 
 /// /////// PROBLEM 7 //////////
 
@@ -124,8 +123,7 @@ function drinkAlcohol() {
 
 // ===== DO NOT TOUCH CODE ABOVE THIS LINE ===== //
 
-// Create function canDrink here
-
+const canDrink = (age) => age < 21? drinkSoda() : drinkAl
 /// /////// PROBLEM 8 //////////
 
 // Write two functions, one called add and one called multiply, that each takes in two numbers and
@@ -134,7 +132,10 @@ function drinkAlcohol() {
 // Write a function called math that takes in two numbers, and a callback 'operator' as parameters.
 // This function should return the result of invoking an operator with the appropriate arguments.
 
-//Code here
+const add = (arr) => arr((num1,num2) => num1 + num2);
+const multiply = (arr) => arr((num1,num2) => num1 * num2);
+
+const math = (arr) => arr((num1,num2, callback) => callback(num1, num2));
 
 ////////// PROBLEM 9 //////////
 
