@@ -182,7 +182,7 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 //Code Here
-let totalPopulation; //  = populations.reduce(/* Provide Your Callback Here */)
+const totalPopulation = populations.reduce((Total, pop) => Total + pop, 0);
 
 ////////// PROBLEM 12 //////////
 
@@ -223,8 +223,7 @@ const monstersInYourPocket = [
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-//Code Here
-let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter((monster) => monster.CP > 200);
 
 /// /////// PROBLEM 13 //////////
 
@@ -240,4 +239,4 @@ let myStrongest; // = monstersInYourPocket.filter(/* Provide Your Callback Here 
 //
 // Make sure to use arrow functions combined with the map method.
 
-// REPLACE THIS WITH YOUR CODE
+const getAges = (people) => people.map((person)=> person.age);
